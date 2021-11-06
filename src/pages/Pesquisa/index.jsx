@@ -20,13 +20,14 @@ export const Pesquisa = () => {
         </div>
         <div className="col-12 col-md-6 text-center align-items-stretch">
             <div className="card">
-                <h3><strong>O que é renderização dinâmica?</strong></h3>
-                <p>Às vezes, desenvolvemos aplicações web complexas, no modelo SPA (Single Page Application). Eles normalmente dependem de frameworks JavaScript para manipular a interface do usuário.
+                <h3><strong>Vamos falar sobre Gatsby</strong></h3>
+                <p>Gatsby é uma framework escrita em JavaScript e React, cuja proposta é ajudar desenvolvedores a construir aplicações e websites de forma facilitada. O foco do Gatsby é proporcionar um desenvolvimento rápido, efetivo e performático, acima de tudo.</p>
+                <h5>E como que ele faz isso?</h5>
+                <p>A forma que ele funciona consiste em três etapas. Primeiro, você tem o Data Source, que é basicamente a fonte desses dados que você vai entregar pra construir o web site ou uma aplicação, como um blog, por exemplo.
 
-                Uma SPA é excelente para os usuários, mas não tão bom para crawlers de motores de busca que tentam rastrear o conteúdo do site.</p>
-                <h5>Renderização Dinâmica: Primeiros Passos</h5>
-                <p>Se você quiser adicionar renderização dinâmico a seu website, provavelmente precisará incluir a ajuda de mais um framework.
-                Infelizmente, provavelmente será necessário. Aqui estão alguns frameworks que você deve considerar:</p>
+                E, depois, vem o processo de building, onde ele vai incorporar todo HTML, JavaScript e CSS que são necessários para compilar sua aplicação, lendo em cima dessa fonte de dados e construir o site estático.
+
+                O conceito do Gatsby é ler esses dados, construí-los de forma estática, criando um site estático, que é o que dá, de fato, essa performance para ele. Por fim, a terceira etapa é o Deploy, onde você entrega esses arquivos e os visualiza na web.</p>
               
                 
             </div>
@@ -34,13 +35,12 @@ export const Pesquisa = () => {
         </div>
         <div className="col-12 col-md-6 text-center align-items-stretch">
             <div className="card">
-                <h3><strong>Exemplos de frameworks para Renderização dinâmica</strong></h3>
-                <p><strong>Puppeteer: </strong>
-                Este é o oficial do Google, por isso é um bom ponto de partida. Usando o Puppeteer, você pode gerar capturas de tela e PDFs de páginas web, criar conteúdo pré-renderizado e até mesmo automatizar o envio de formulários. O melhor de tudo, é grátis.<br/>
-                <strong>Rendertron: </strong>
-                Esse aqui vai exigir um pouco de estudo, disponível no Github. Ainda assim, foi criado para renderizar páginas web para que o Googlebot possa rastrear e indexar o conteúdo.<br/><strong>Prerender.io: </strong>
-                Esta solução custará algum dinheiro se você planeja renderizar mais de 250 páginas. O código para o framework também está disponível no Github. Depois de configurar e executar seu renderizador dinâmico, é hora de escolher o conteúdo que você deseja gerar HTML estático.
-                Se você estiver interessado em indexar suas SPAs, obviamente irá desejar ter “googlebot” e “bingbot” nessa lista. No entanto, existem outros agentes (como “facebot”) que você também pode querer gerar conteúdo estático.</p>
+                <h3><strong>Adicionando um componente de SEO</strong></h3>
+                <p>Cada site na web possui meta-tags básicas como título, favicon ou descrição da página em seu elemento. Essas informações são exibidas no navegador e usadas quando alguém compartilha seu site, por exemplo, no Twitter. Você pode fornecer a seus usuários e a esses sites dados adicionais para incorporar seu site com mais dados - e é aí que este guia para um componente de SEO entra. No final, você terá um componente que pode colocar em seu arquivo de layout e ter visualizações ricas para outros clientes, usuários de smartphones e mecanismos de pesquisa.  </p>
+
+                    <h5>gatsby-config.js</h5>
+                    <p>Gatsby expõe automaticamente a siteMetadataseção do gatsby-configarquivo na camada de dados GraphQL. É considerada prática recomendada colocar as meta informações do seu site lá.</p>
+             
                
             </div>
         </div>
