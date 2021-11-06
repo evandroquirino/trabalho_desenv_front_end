@@ -57,7 +57,7 @@ export const Footer = () => {
     return (
         <>
             <footer className="bg-primary">
-                <p className="text-center text-light mb-0">Desenvolvido por Andrey Diógenes Lima da Silva</p>
+                <p className="text-center text-light mb-0">Desenvolvido por Evandro Quirino Rossi <br/>RA: 11208</p>
             </footer>
         </>
     )

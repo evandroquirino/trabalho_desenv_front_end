@@ -20,11 +20,12 @@ export const Home = () => {
         <>
             <h1 className="text-center">Produtos em Destaque:</h1>
 
-            <div className="row">
+            <div className="row d-flex">
                 {produtos.map((item,index) =>
                 (
-                    <div className="col-12 col-md-4 text-center mb-5">
+                    <div className="col-12 col-md-4 text-center mb-5 card-group">
                         <div className="card">
+                            <div className="cards">
                             <img src={item.imagemp} className="w-100"></img>
                             <h5>{item.produto}</h5>
                             {item.promo != 0 ?
@@ -41,7 +42,8 @@ export const Home = () => {
                                     {formataValor(item.valor)}
                                 </p>
                             }
-                            <Link className="btn btn-success" to={'/produto/'+item.id}>Detalhes</Link>
+                            </div>
+                            <Link className="embaixo btn btn-success" to={'/produto/'+item.id}>Detalhes</Link>
                         </div>
                     </div>
                 ))
